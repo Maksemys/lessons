@@ -1,0 +1,81 @@
+@import url("reset.css");
+
+body {
+	background-color: rgb(233, 233, 233);
+}
+
+h1 {
+	color: blue;
+}
+
+h2 {
+	color: red;
+}
+
+p {
+	color:brown;
+}
+
+.navigation p {
+	color:rgb(177, 172, 96);
+}
+
+.menu {
+	color: green;
+}
+
+#chapter-1 + p {
+	color: rgb(251, 255, 1);
+}
+
+.blue {
+	color: blue;
+}
+
+#chapter-2 ~ p {
+	color: rgb(226, 43, 217);
+}
+
+.chapt-3 > p {
+	color:rgb(99, 30, 30);
+}
+
+.blue.green {
+	color: green;
+}
+
+.chapt-4 p {
+	color: rgb(248, 114, 5);
+}
+
+.chapt-5 h2 {
+	color: black;
+}
+
+.future {
+	color: rgb(226, 43, 113);
+}
+
+p .future {
+	color: blueviolet;
+}
+
+.chapt-5 p {
+	color: rgb(95, 126, 153);
+}
+
+[class*="ored"] {
+	color: rgb(255, 174, 0);
+}
+
+.footer a{
+	color:rgb(226, 43, 165);
+}
+
+.footer p {
+	color: peru;
+}
+
+.up {
+	color: red;
+}
