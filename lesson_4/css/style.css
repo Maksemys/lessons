@@ -74,10 +74,6 @@ body {
 	text-align: justify;
 }
 
-.sub-title + p {
-	white-space: nowrap;
-}
-
 .part2 .sub-title {
 	color: rgb(55, 0, 255);
 	text-shadow:
