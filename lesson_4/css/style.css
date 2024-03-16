@@ -74,17 +74,24 @@ body {
 	text-align: justify;
 }
 
+.sub-title + p {
+	color: red;
+	white-space: nowrap;
+}
+
 .part2 .sub-title {
 	color: rgb(55, 0, 255);
 	text-shadow:
-	8px 8px 20px rgba(238, 234, 5, 0.89);
-	letter-spacing: 8px
+	8px 8px 20px rgba(255, 123, 0, 0.952);
+	letter-spacing: 8px;
 }
 
 .sub-title .span {
 	text-decoration: line-through;
 	text-decoration-color: red;
 	text-decoration-style: solid;
+	text-shadow:
+	5px 1px 5px rgba(90, 238, 5, 0.89);
 }
 
 .part2 p {
