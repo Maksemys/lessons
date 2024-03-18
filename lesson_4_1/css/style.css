@@ -1,0 +1,190 @@
+
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+/* Google Fonts (Plugin) */
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap");
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	color: #0d1216;
+}
+
+.navigation p {
+	font-size: 24px;
+	line-height: 1.5; /* 36/24 */
+	text-transform: uppercase;
+	color: orangered;
+	text-decoration: line-through dotted rgb(75, 22, 221);
+}
+
+.navigation .menu {
+	font-size: 20px;
+	line-height: 1.6; /* 32/20 */
+	color: rgb(20, 110, 20);
+}
+
+.title {
+	font-weight: 700;
+	color: rgba(255, 0, 0, 0.692);
+	font-size: 40px;
+	line-height: 1.2; /* 48/40 */
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow:
+		5px 8px 15px rgba(67, 43, 94, 0.692),
+		-2px -2px 5px rgba(67, 61, 105, 0.541);
+	word-spacing: 20px;
+}
+
+.sub-title {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1.25; /* 40/32 */
+	text-align: center;
+
+}
+
+.moon p {
+	font-size: 16px;
+	line-height: 1.5625; /* 25/16 */
+}
+
+.part1 .sub-title {
+	color: rgb(255, 0, 255);
+	text-shadow:
+	5px 8px 15px rgba(199, 23, 146, 0.692),
+	-5px -5px 10px rgba(85, 167, 47, 0.829);
+	letter-spacing: 8px
+}
+
+.part1 p {
+	font-style:italic;
+	text-align: justify;
+}
+
+#history + p {
+	color: red;
+	white-space: nowrap;
+}
+
+.part2 .sub-title {
+	color: rgb(55, 0, 255);
+	text-shadow:
+	8px 8px 20px rgba(255, 123, 0, 0.952);
+	letter-spacing: 8px;
+}
+
+.sub-title .span {
+	text-decoration: line-through;
+	text-decoration-color: red;
+	text-decoration-style: solid;
+	text-shadow:
+	5px 1px 5px rgba(90, 238, 5, 0.89);
+}
+
+.part2 p {
+	text-align: center;
+	font-style:oblique;
+	text-shadow:
+	5px 8px 15px rgba(199, 23, 146, 0.692),
+	-5px -5px 10px rgba(85, 167, 47, 0.829);
+}
+
+.part2 .sub-title ~ p {
+	color: rgb(204, 0, 255);
+}
+
+.part3 p {
+	color: aqua;
+}
+
+.part3 .sub-title {
+	text-transform: capitalize;
+	color: green;
+	text-decoration: underline;
+	text-decoration-color: red;
+	text-decoration-style: double;
+}
+
+.part3 .sub-title + p {
+	color: purple;
+}
+
+.part4 {
+	font-family: 'Truculenta', serif;
+	font-weight: 500;
+}
+
+.part4 .sub-title {
+	text-transform: lowercase;
+	color: #e100ffc0;
+	text-decoration: underline;
+	text-decoration-color: rgb(17, 0, 255);
+	text-decoration-style: wavy;
+}
+
+.part4 p {
+	text-align: right;
+	color: rgb(255, 140, 0);
+}
+
+.footer div p {
+	font-size: 20px;
+	line-height: 1.6; /* 32/20 */
+}
+
+.up {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.6; /* 32/20 */
+	text-transform: uppercase;
+	color: rgba(255, 0, 179, 0.692);
+}
+
+
+.homework {
+	font-family: "Proxima Nova", sans-serif;
+	font-weight: 400;
+	color: #2b2929;
+}
+
+.homework h2,h3 {
+	font-weight: 600;
+}
+
+.title-bed, .title-room {
+	font-size: 40px;
+	font-style: normal;
+	line-height: 1.2; /* 48/40 */
+	text-transform: none;
+}
+
+.title-bed {
+	text-align: center;
+}
+
+.homework-2 h3 {
+	font-size: 20px;
+	line-height: 1.4; /* 28/20 */
+}
+
+.homework p{
+	font-size: 16px;
+	line-height: 1.875; /* 30/16 */
+}
+
+.homework-2 .list {
+	font-size: 16px;
+	line-height: 1.875; /* 30/16 */
+}
