@@ -18,11 +18,12 @@ body {
 	font-family: "Truculenta", sans-serif;
 	font-weight: 400;
 	color: #2b2929;
-	max-width: 1920px;
 }
 
 .header {
 	background: #f8f8f8;
+	max-width: 1920px;
+	margin: 0 auto;
 }
 
 .header h1 {
@@ -33,6 +34,8 @@ body {
 }
 
 .page {
+	max-width: 1920px;
+	margin: 0 auto;
 	background: #f8f8f8;
 	color: #2b2929;
 }
@@ -168,6 +171,12 @@ body {
 	padding-right: 12px;
 }
 
+.footer {
+	max-width: 1920px;
+	margin: 0 auto;
+	background: #f8f8f8;
+}
+
 .footer__container {
 	max-width: 1290px;
 	margin: 0 auto;
@@ -175,6 +184,6 @@ body {
 
 .footer h2 {
 	font-size: 50px;
-	line-height: 1.6;/* 32/20 */
+	line-height: 1.6;
 	text-align: center;
 }
