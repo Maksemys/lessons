@@ -1,0 +1,239 @@
+
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+/* Google Fonts (Plugin) */
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:500,700&display=swap");
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+
+
+body {
+	font-family: "Truculenta", sans-serif;
+	font-weight: 400;
+	color: #2b2929;
+}
+
+.page {
+	max-width: 1920px;
+	margin: 0 auto;
+	background: #f8f8f8;
+	color: #2b2929;
+}
+
+.header {
+	max-width: 1920px;
+	margin: 0 auto;
+	background: linear-gradient(90deg, #e1ff3a 0%, #3a7fff 50%, #5a05f7 100%) center / cover no-repeat;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 74px;
+	line-height: 0.74324;
+	text-transform: capitalize;
+	color: #000;
+	text-align: center;
+	padding: 50px 0;
+}
+
+.coral {
+	max-width: 1920px;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+	background: url("../img/coral/leves_left.svg") 0 80% no-repeat, url("../img/coral/leves_right.svg") 100% 65% no-repeat rgba(30, 40, 50, 0.05);;
+}
+
+.coral__container {
+	max-width: 1226px;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+.coral__block {
+	max-width: 682px;
+	display: inline-block;
+	margin-right: 98px;
+	padding: 155px 0 60px 0;
+}
+
+.coral__title {
+	font-weight: 300;
+	font-size: 74px;
+	line-height: 0.74324;
+	text-transform: capitalize;
+	margin-bottom: 52px;
+}
+
+.coral__text {
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 1.83333;
+	text-transform: capitalize;
+	margin-bottom: 66px;
+}
+
+.coral__button{
+	background: url('../img/coral/bag.svg') 26px / 30px no-repeat,
+	#1E2832;
+	text-align: center;
+	padding: 19px 26px 19px 64px;
+	text-transform: capitalize;
+	color: #fff;
+	font-size: 29px;
+	font-weight: 400;
+}
+
+.coral__image {
+	max-width: 424px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 81px 0 60px 0;
+	font-size: 0;
+}
+
+.coral__image img {
+	border-radius: 160px 0;
+	width: 424px;
+	height: 542px;
+	box-shadow: 18px 20px 0 -2px rgb(244, 244, 245),
+					18px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.krovato {
+	font-family: "Proxima Nova", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.875;
+	background: #f8f8f8;
+	max-width: 1920px;
+	margin: 0px auto;
+}
+
+.krovato__container {
+	max-width: 1070px;
+	margin: 0px auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.homework-1 h2, h3 {
+	font-weight: 600;
+}
+
+.krovato-title {
+	font-size: 40px; 
+	line-height: 1.2;
+	margin-bottom: 40px;
+}
+
+.img__container {
+	margin-bottom: 40px;
+}
+
+.krovato__descr > p {
+	margin-bottom: 30px;
+}
+
+.krovato-subtitle {
+	font-size: 20px; 
+	line-height: 1.4;
+	margin-bottom: 30px;
+}
+
+.list {
+	margin-bottom: 40px;
+}
+
+.list__item {
+	background: url("../img/krovato/check_mark.svg") 0 0 / 26px no-repeat;
+	padding-left: 47px;
+	margin-bottom: 20px;
+	min-height: 20px;
+}
+
+
+.eduplay {
+	font-family: "Quicksand", sans-serif;
+	max-width: 1440px;
+	margin: 0 auto;
+	background: #914cff url("../img/eduplay/alphabet_patterns.png") 90% 60% / auto no-repeat;
+}
+
+.eduplay__container {
+	max-width: 1280px;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+.eduplay__block {
+	display: inline-block;
+	max-width: 600px;
+	margin-right: 133px;
+	padding: 121px 0 121px 80px;
+	color: #fff;
+}
+
+.eduplay__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.2;
+	margin-bottom: 24px;
+}
+
+.eduplay__text {
+	font-weight: 500;
+	font-size: 20px; 
+	line-height: 1.6;
+	margin-bottom: 24px;
+}
+
+.eduplay__button {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.5625;
+	color: #0d1216;
+	border-radius: 8px;
+	padding: 11px 20px;
+	width: 217px;
+	height: 48px;
+	padding-left: 40px;
+	background: #fff url("../img/eduplay/hat.png") 10px 10px / 25px no-repeat;;
+}
+
+.eduplay__image {
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.footer {
+	max-width: 1920px;
+	min-height: 200px;
+	margin: 0 auto;
+	background: #c0b8b8;
+	background:
+			url("../img/krovato/living-room.jpg") 50% 100px / 20% no-repeat,
+			linear-gradient(90deg, #40ff3a 0%, #3a3dff 50%, #f75e05 100%) center / 50% no-repeat,
+			#8866a8 url("../img/coral/woomen.jpg") 0 0/ 200px;
+}
+
+.footer__container {
+	max-width: 1290px;
+	margin: 0 auto;
+}
+
+.footer h2 {
+	font-size: 50px;
+	line-height: 1.6;
+	text-align: center;
+}
