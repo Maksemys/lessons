@@ -31,7 +31,7 @@ body {
 .header {
 	max-width: 1920px;
 	margin: 0 auto;
-	background: linear-gradient(90deg, #e1ff3a 0%, #3a7fff 50%, #5a05f7 100%) center / cover no-repeat;
+	background: linear-gradient(90deg, #e1ff3a 0%, #3a7fff 50%, #5a05f7 100%);
 }
 
 h1 {
@@ -138,6 +138,11 @@ h1 {
 
 .img__container {
 	margin-bottom: 40px;
+	max-width: 100%;
+}
+
+.img__container img {
+	border-radius: 8px;
 }
 
 .krovato__descr > p {
@@ -164,8 +169,6 @@ h1 {
 
 .eduplay {
 	font-family: "Quicksand", sans-serif;
-	max-width: 1440px;
-	margin: 0 auto;
 	background: #914cff url("../img/eduplay/alphabet_patterns.png") 90% 60% / auto no-repeat;
 }
 
@@ -181,6 +184,7 @@ h1 {
 	margin-right: 133px;
 	padding: 121px 0 121px 80px;
 	color: #fff;
+	vertical-align: middle;
 }
 
 .eduplay__title {
@@ -204,15 +208,15 @@ h1 {
 	color: #0d1216;
 	border-radius: 8px;
 	padding: 11px 20px;
-	width: 217px;
-	height: 48px;
+	min-width: 217px;
+	min-height: 48px;
 	padding-left: 40px;
 	background: #fff url("../img/eduplay/hat.png") 10px 10px / 25px no-repeat;;
 }
 
 .eduplay__image {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 }
 
 
