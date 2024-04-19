@@ -1,0 +1,465 @@
+
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+/* Google Fonts (Plugin) */
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron:500&display=swap");
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+
+body {
+	font-family: "Proxima Nova", sans-serif;
+	overflow: scroll;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+
+}
+
+[class*="__container"] {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+.header {
+	background: linear-gradient(90deg, rgba(218, 207, 35, 1) 0%, rgba(59, 141, 215, 1) 100%);
+	padding: 15px;
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 5;
+}
+
+.page {
+	background-color: rgba(189, 181, 181, 0.2);
+	padding: 100px;
+}
+
+.sub-title, .header__title {
+	font-size: 64px;
+	line-height: 1.4;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+
+.block {
+	width: 300px;
+	height: 300px;
+	background-color: rgba(8, 214, 241, 0.24);
+	display: inline-block;
+	border-radius: 15px;
+}
+
+.block:not(:last-child) {
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+.block__item {
+	width: 300px;
+	height: 300px;
+	background-color: #465ea1;
+	text-align: center;
+	padding: 20px;
+	font-size: 24px;
+	font-weight: 500;
+	border-radius: 15px;
+	transition: all 0.6s;
+}
+
+.block__item--translate-px:hover {
+	transform: translate(20px, 20px);
+}
+
+.block__item--translate-persent:hover {
+	transform: translate(10%, -10%);
+}
+
+.block__item--scale-0-5:hover {
+	transform: scale(0.5);
+}
+
+.block__item--scale-2-5:hover {
+	transform: scale(2.5);
+}
+
+.block__item--scale-15-25:hover {
+	transform: scale(1.5, 2.5);
+}
+
+.block__item--scale-1-1:hover {
+	transform: scale(-1, 1);
+}
+
+.block__item--rotate-180:hover {
+	transform: rotate(-180deg);
+}
+
+.block__item--rotate-45:hover {
+	transform: rotate(45deg);
+}
+
+.block__item--rotatex-75:hover {
+	transform: rotatex(75deg);
+}
+
+.block__item--skew-10-5:hover {
+	transform: skew(10deg, 5deg);
+}
+
+.block__item--matrix:hover {
+	/* transform: matrix(1, 2, 5, 1, 10, 50); */
+	transform: translate(20px, 20px) scale(0.5) rotate(-45deg) skew(-30deg);
+}
+
+.block__item--transform-origin:hover {
+	transform: rotate(45deg);
+	transform-origin: 0 0;
+}
+
+/* 3D */
+
+.transform-3d__cards-3d {
+	margin-bottom: 50px;
+}
+
+.block3d {
+	width: 300px;
+	height: 300px;
+	background-color: rgba(0, 255, 128, 0.541);
+	display: inline-block;
+	border-radius: 15px;
+	vertical-align: top;
+}
+
+.block3d:not(:last-child) {
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+.block3d__item {
+	width: 300px;
+	height: 300px;
+	background-color: #6646a1;
+	text-align: center;
+	padding: 20px;
+	font-size: 24px;
+	font-weight: 500;
+	border-radius: 15px;
+	transition: all 0.6s;
+	
+}
+
+.block3d {
+	perspective: 500px;
+	perspective-origin: center;
+}
+
+.block3d__item--perspective:hover {
+	transform: rotateX(45deg);
+}
+
+.block3d__item--translate3d:hover {
+	transform: translate3d(20px, 50px, 90px);
+}
+
+.block3d__item--scale3d:hover {
+	transform: scale3D(2, 3, 2);
+}
+
+.block3d__item--rotate3d:hover {
+	transform: rotate3d(30, 15, 15, 50deg);
+}
+
+.block3d__item--multi3d:hover {
+	transform: translate3d(20px, 20px, 20px) rotate3d(1, 1, 1, 50deg);
+}
+
+.block3d--transform-style {
+	transform-style: preserve-3d;
+}
+
+.block3d__item--transform-style:hover {
+	transform: rotateX(55deg);
+}
+
+
+.card {}
+
+.card__body {
+	position: relative;
+	width: 300px;
+	perspective: 800px;
+}
+
+.card__body img {
+	width: 100%;
+}
+
+.card__front,
+.card__back {
+	transition: all 0.5s;
+}
+
+.card__front {
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+}
+
+.card__back {
+	transform: rotateY(0deg);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.card__body:hover .card__front {
+	transform: rotateY(0deg);
+}
+
+.card__body:hover .card__back {
+	transform: rotateY(-180deg);
+}
+
+.car {
+	width: 100%;
+	height: 1200px;
+	background: url("../img/road.jpg") 0 0 / cover no-repeat;
+}
+
+.car__body {
+	position: relative;
+	width: 1200px;
+	height: 550px;
+	top: 500px;
+	left: 450px;
+}
+
+.car__kuzov {
+	position: absolute;
+	background: #465ea1;
+	width: 850px;
+	height: 250px;
+	top: 200px;
+	left: 0;
+	border-radius: 30px 0 0 15%;
+}
+
+.car__capot {
+	position: absolute;
+	background: #465ea1;
+	width: 350px;
+	height: 250px;
+	top: 200px;
+	left: 850px;
+	border-radius: 0% 180% 41% 135% / 75% 97% 55% 0%;
+}
+
+.car__cabina-part-1 {
+	position: absolute;
+	background: #465ea1;
+	width: 200px;
+	height: 210px;
+	top: 0;
+	left: 605px;
+	border-radius: 40px 5px 0 0;
+	transform: skew(40deg);
+}
+
+.car__cabina-part-2 {
+	position: absolute;
+	background: #465ea1;
+	width: 250px;
+	height: 200px;
+	top: 0;
+	left: 470px;
+	border-radius: 40px 10px 0 0;	
+}
+
+.car__window-part-1 {
+		position: absolute;
+		background: rgb(70, 70, 70, 1);
+		width: 180px;
+		height: 180px;
+		top: 20px;
+		left: 590px;
+		border-radius: 40px 0px 0 0;
+		transform: skew(40deg);
+		border: 1px solid black;
+}
+
+/* .car__window-part-1:active {
+	position: absolute;
+	top: 120px;
+	left: 590px;
+} */
+
+.car__window-part-2 {
+	position: absolute;
+	background: rgb(70, 70, 70, 1);
+	width: 205px;
+	height: 180px;
+	top: 20px;
+	left: 490px;
+	border-radius: 40px 0px 0 0;
+	border: 1px solid black;
+	transition: all 1.2s;
+}
+
+/* .car__window-part-2:active {
+	position: absolute;
+	top: 120px;
+	left: 490px;
+} */
+
+
+.car__dor {
+	position: absolute;
+	top: 200px;
+	left: 490px;
+	width: 355px;
+	height: 200px;
+	border: 1px solid black;
+	border-top: none;
+	border-radius: 0 0 0 40px;
+}
+
+.car__handle {
+	position: absolute;
+	top: 230px;
+	left: 520px;
+	width: 60px;
+	height: 15px;
+	background: linear-gradient(90deg, rgba(23, 23, 21, 1) 0%, rgba(129, 162, 193, 1) 100%);
+	z-index: 5;
+	border-radius: 5px 5px 10px 10px;
+}
+
+.car__mirror {
+	position: absolute;
+	top: 170px;
+	left: 775px;
+	width: 90px;
+	height: 40px;
+	background: linear-gradient(90deg, rgba(23, 23, 21, 1) 0%, rgba(129, 162, 193, 1) 100%);
+	z-index: 5;
+	border-radius: 20% 100% 100% 30% / 28% 100% 10% 35%;
+}
+
+.car__headlight-front {
+	position: absolute;
+	top: 260px;
+	left: 1135px;
+	width: 60px;
+	height: 50px;
+	background-color: #82878a;
+	border-radius: 13% 100% 58% 9% / 27% 100% 0% 35%;
+}
+
+.car__headlight-front:hover {
+	background-color: rgb(255, 255, 76);
+	box-shadow: 30px 0px 30px 5px rgb(255, 255, 76);
+}
+
+.car__headlight-back {
+	position: absolute;
+	top: 230px;
+	left: 0px;
+	width: 20px;
+	height: 80px;
+	background-color: #ff000091;
+}
+
+.car__headlight-back:hover {
+	background-color: #ff0000;
+	box-shadow: -40px 0px 40px 5px rgb(255, 76, 76);
+}
+
+.car__bottom {
+	position: absolute;
+	top: 410px;
+	left: 0px;
+	width: 1100px;
+	height: 42px;
+	border-radius: 24% 137% 65% 24% / 0% 152% 12% 88%;
+	background: black;
+	z-index: 5;
+}
+
+.car__wing-1 {
+	position: absolute;
+	top: 270px;
+	left: 125px;
+	width: 300px;
+	height: 180px;
+	border-radius: 49% 50% 5% 7% / 69% 71% 4% 31%;
+	border: 15px solid rgb(0, 0, 0);
+	background-color: #252424;
+	border-bottom: none;
+	z-index: 10;
+}
+
+.car__wing-2 {
+	position: absolute;
+	top: 270px;
+	left: 850px;
+	width: 300px;
+	height: 180px;
+	border-radius: 49% 50% 5% 7% / 69% 71% 4% 31%;
+	border: 15px solid rgb(0, 0, 0);
+	background-color: #252424;
+	border-bottom: none;
+	z-index: 10;
+}
+
+.car__wheel-1 {
+	position: absolute;
+	top: 300px;
+	left: 150px;
+	width: 250px;
+	height: 250px;
+	background: url("../img/car-vehicle.png") -15px -15px / 120% no-repeat;
+	border-radius: 50%;
+	border: 50px ridge rgb(0, 0, 0);
+	z-index: 15;
+	transition: all 1.2s;
+}
+
+.car__wheel-1:hover, .car__wheel-2:hover {
+	transform: rotate(360deg);
+}
+
+.car__wheel-2 {
+	position: absolute;
+	top: 300px;
+	left: 875px;
+	width: 250px;
+	height: 250px;
+	background: url("../img/car-vehicle.png") -15px -15px / 120% no-repeat;
+	border-radius: 50%;
+	border: 50px ridge rgb(0, 0, 0);
+	z-index: 15;
+	transition: all 1.2s;
+}
+
+
+
+.footer__desc {
+	text-transform: uppercase;
+	text-align: center;
+}
+
