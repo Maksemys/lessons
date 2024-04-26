@@ -89,6 +89,14 @@ body {
 	gap: 10px;
 }
 
+.social-icons__link {
+	transition: 0.5s;
+}
+
+.social-icons__link:hover {
+	transform: scale(1.1);
+}
+
 .support__language p {
 	font-weight: 600;
 	font-size: 19px;
