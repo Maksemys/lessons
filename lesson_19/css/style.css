@@ -869,6 +869,7 @@ body {
      -moz-column-gap: 1.5rem;
           column-gap: 1.5rem;
   row-gap: 1.5rem;
+  /*не розумію чому не переходять дві останні картки на розширенні 550px*/
 }
 @media (min-width: 82.5em) {
   .styles__items {
