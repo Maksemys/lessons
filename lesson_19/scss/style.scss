@@ -374,18 +374,18 @@ body {
 		content: "";
 		position: absolute;
 		left: 0;
-		bottom: 109px;
-		width: 125px;
-		height: 67px;
+		bottom: toRem(109);
+		width: toRem(125);
+		height: toRem(67);
 		background: url("../img/main/hero/left-frame.svg") 100% no-repeat;
 	}
 	&::after{
 		content: "";
 		position: absolute;
 		right: 0;
-		bottom: 157px;
-		width: 195px;
-		height: 262px;
+		bottom: toRem(157);
+		width: toRem(195);
+		height: toRem(262);
 		background: url("../img/main/hero/right-frame.svg") 100% no-repeat;
 	}
 	@media (max-width: toEm(791.98)) {
@@ -468,8 +468,8 @@ body {
 		&::before {
 			content: "";
 			background: url("../img/main/hero/shop.svg") center / 24px 24px no-repeat;
-			width: 30px;
-			height: 30px;
+			width: toRem(30);
+			height: toRem(30);
 		}
 		@media (any-hover: hover) {
 			&:hover {
@@ -550,13 +550,13 @@ body {
 	&__text {
 		font-family: "Roboto", sans-serif;
 		font-weight: 400;
-		font-size: 34px;
+		font-size: toRem(34);
 		text-transform: uppercase;
 		text-align: center;
 		color: #000;
 		position: absolute;
-		top: 300px;
-		left: -320px;
+		top: 45%;
+		left: -25%;
 		transform: rotate(-90deg);
 		@include adaptiveValue("font-size", 34, 20);
 		@media (max-width: toEm(1300)) {
@@ -633,13 +633,12 @@ body {
 		justify-content: space-between;
 		font-family: "Open Sans", sans-serif;
 		font-weight: 600;
-		font-size: 16px;
 		text-transform: capitalize;
 		text-align: right;
 		color: #fff;
 		background: #1e2832;
 		border: 1px solid #1e2832;
-		padding: 15px 14px;
+		padding: toRem(15) toRem(15);
 		position: absolute;
 		left: 0;
 		bottom: 0;
@@ -721,21 +720,20 @@ body {
 
 	&__filter {
 		background: #1e2832;
-		padding: 5px 15px;
+		padding: toRem(5) toRem(15);
 		span {
 			font-family: "Open Sans", sans-serif;
 			font-weight: 400;
-			font-size: 16px;
 			text-transform: capitalize;
 			color: #fff;
 			display: flex;
-			gap: 6px;
+			gap: toRem(6);
 			align-items: center;
 			&::before {
 				content: "";
 				background: url("../img/main/newsletter/filter.svg") center / 16px 14px no-repeat;
-				width: 20px;
-				height: 20px;
+				width: toRem(20);
+				height: toRem(20);
 			}
 		}
 		@media (any-hover: hover) {
@@ -787,7 +785,7 @@ body {
 
 	&__bottom {
 		max-width: toRem(292);
-		margin: 0 10px;
+		margin: 0 toRem(10);
 		display: flex;
 		flex-direction: column;
 		row-gap: toRem(16);
@@ -834,7 +832,7 @@ body {
 	&__regular-price {
 		font-family: "Open Sans", sans-serif;
 		font-weight: 600;
-		font-size: 14px;
+		font-size: toRem(14);
 		text-transform: capitalize;
 		text-decoration: line-through;
 		text-align: right;
@@ -844,7 +842,6 @@ body {
 	&__sale-price {
 		font-family: "Open Sans", sans-serif;
 		font-weight: 600;
-		font-size: 16px;
 		text-transform: capitalize;
 		text-align: right;
 		color: $mainColor;
@@ -859,7 +856,7 @@ body {
 	z-index: 2;
 
 	&__label {
-		padding: 4px 12px;
+		padding: toRem(4) toRem(12);
 		text-transform: uppercase;
 		color: #fff;
 		&:not(:last-child) {
@@ -880,14 +877,14 @@ body {
 	display: none;
 	&__icons {
 		display: flex;
-		gap: 24px;
+		gap: toRem(24);
 		align-items: center;
 	}
 
 	&__like {
 		background: url("../img/main/newsletter/like.svg") center / 20px 19px no-repeat;
-		width: 25px;
-		height: 25px;
+		width: toRem(25);
+		height: toRem(25);
 		transition: all 0.3s;
 		&:hover {
 			background: url("../img/main/newsletter/like-red.svg") center / 20px 19px no-repeat;
@@ -900,8 +897,8 @@ body {
 
 	&__search {
 		background: url("../img/main/newsletter/search.svg") center / 20px 19px no-repeat;
-		width: 25px;
-		height: 25px;
+		width: toRem(25);
+		height: toRem(25);
 		transition: all 0.3s;
 		&:hover {
 			background: url("../img/main/newsletter/search-red.svg") center / 20px 19px no-repeat;
@@ -911,11 +908,11 @@ body {
 	&__shop-now {
 		font-family: "Roboto", sans-serif;
 		font-weight: 400;
-		font-size: 18px;
+		font-size: toRem(18);
 		text-transform: capitalize;
 		color: #fff;
 		display: flex;
-		gap: 8px;
+		gap: toRem(8);
 		align-items: center;
 		transition: color, background 0.3s;
 		&:hover {
@@ -924,27 +921,12 @@ body {
 		&::before {
 			content: "";
 			background: url("../img/main/newsletter/shop.svg") center / 20px 19px no-repeat;
-			width: 25px;
-			height: 25px;
-			// margin-right: 8px;
-			// vertical-align: middle;
+			width: toRem(25);
+			height: toRem(25);
 		}
 		&:hover::before {
 			background: url("../img/main/newsletter/shop-red.svg") center / 20px 19px no-repeat;
 		}
-		// span {
-		// 	&::before {
-		// 		content: "";
-		// 		background: url("../img/main/newsletter/shop.svg") center / 20px 19px no-repeat;
-		// 		width: 25px;
-		// 		height: 25px;
-		// 		margin-right: 8px;
-		// 		vertical-align: middle;
-		// 	}
-		// 	&:hover::before {
-		// 		background: url("../img/main/newsletter/shop-red.svg") center / 20px 19px no-repeat;
-		// 	}
-		// }
 	}
 }
 
@@ -953,9 +935,9 @@ body {
 		display: flex;
 		justify-content: space-between;
 		background: #1e2832;
-		padding: 15px 14px;
+		padding: toRem(15) toRem(14);
 		position: absolute;
-		bottom: 65px;
+		bottom: toRem(65);
 		left: 0;
 		width: 100%;
 
@@ -966,8 +948,8 @@ body {
 	background: #010204;
 
 	&__container {
-		padding-top: 233px;
-		padding-bottom: 93px;
+		padding-top: toRem(233);
+		padding-bottom: toRem(93);
 		display: flex;
 		justify-content: end;
 		position: relative;
@@ -975,29 +957,29 @@ body {
 			content: "";
 			background: url("../img/main/banner/andrey_zvyagintsev_eqj1zmpq_vm_unsplash_1_1x.webp") no-repeat;
 			position: absolute;
-			width: 1765px;
-			height: 740px;
+			width: toRem(1765);
+			height: toRem(740);
 			top: 0;
-			left: -450px;
+			left: toRem(-450);
 		}
 		&::after {
 			content: "";
 			background: url("../img/main/banner/1024px-Zara_Logo_1.png") no-repeat;
 			position: absolute;
-			width: 735px;
-			height: 310px;
-			top: 51px;
-			right: -401px;
+			width: toRem(735);
+			height: toRem(310);
+			top: toRem(51);
+			right: toRem(-401);
 		}
 		@media (max-width: toEm(550)) {
 			&::after {
 				display: none;
 			}
 			&::before {
-				height: 500px;
+				height: toRem(550);
 			}
-		padding-top: 120px;
-		padding-bottom: 90px;
+		padding-top: toRem(120);
+		padding-bottom: toRem(90);
 		}
 	}
 
@@ -1016,10 +998,10 @@ body {
 		row-gap: toRem(30);
 		align-items: center;
 		text-align: justify;
-		padding: 0 10px;
+		padding: 0 toRem(10);
 	}
 	&__title {
-		max-width: 191px;
+		max-width: toRem(191);
 		img {
 			max-width: 100%;
 		}
@@ -1028,7 +1010,7 @@ body {
 	&__descr {
 		font-family: "Roboto", sans-serif;
 		font-weight: 400;
-		font-size: 26px;
+		font-size: toRem(26);
 		line-height: 154%;
 		text-transform: capitalize;
 		color: #fff;
@@ -1037,10 +1019,10 @@ body {
 
 	&__button {
 		background: #fff;
-		padding: 19px 26px;
+		padding: toRem(19) toRem(26);
 		font-family: "Roboto", sans-serif;
 		font-weight: 400;
-		font-size: 29px;
+		font-size: toRem(29);
 		text-transform: capitalize;
 		color: #1e2832;
 		// width: toRem(237);
@@ -1064,7 +1046,7 @@ body {
 	&__container {
 		display: flex;
 		flex-direction: column;
-		gap: 70px;
+		gap: toRem(70);
 	}
 
 	&__instagram {
@@ -1074,10 +1056,10 @@ body {
 	}
 }
 .instagram {
-	max-width: 1320px;
+	// max-width: toRem(1320);
 	display: flex;
 	flex-direction: column;
-	gap: 60px;
+	gap: toRem(60);
 	@include adaptiveValue("gap", 60, 30);
 	&__title-h2 {
 	}
@@ -1086,7 +1068,7 @@ body {
 		display: flex;
 		flex-direction: row;
 		// flex-wrap: wrap;
-		gap: 24px;
+		gap: toRem(24);
 		// justify-content: center;
 		overflow-y: hidden;
 		overflow-x: scroll;
@@ -1094,9 +1076,9 @@ body {
 	}
 
 	&__link {
-		flex: 0 0 200px;
+		flex: 0 0 toRem(200);
 		@media (max-width: toEm(550)){
-			flex-basis: 150px;
+			flex-basis: toRem(150);
 		}
 	}
 
@@ -1110,7 +1092,7 @@ body {
 .newsletter {
 	display: flex;
 	flex-direction: column;
-	gap: 74px;
+	gap: toRem(74);
 	&__title-h2 {
 	}
 
@@ -1120,18 +1102,18 @@ body {
 	&__line-form {
 		justify-content: center;
 		display: flex;
-		column-gap: 26px;
+		column-gap: toRem(26);
 		flex-wrap: wrap;
-		row-gap: 40px;
+		row-gap: toRem(40);
 	}
 
 	&__input {
 		display: flex;
-		flex-basis: 643px;
+		flex-basis: toRem(643);
 		flex-shrink: 0;
 		flex-grow: 0;
-		max-height: 32px;
-		padding: 15px;
+		max-height: toRem(32);
+		padding: toRem(15);
 		border-bottom: 2px solid #000;
 		@media (max-width: toEm(767.98)) {
 			flex-shrink: 1;
@@ -1206,7 +1188,6 @@ body {
 
 	&__text {
 		font-weight: 400;
-		font-size: 16px;
 		line-height: 1.8;
 		text-transform: capitalize;
 		color: rgba(30, 40, 50, 0.75);
@@ -1231,8 +1212,8 @@ body {
 	}
 
 	&__link {
-		width: 30px;
-		height: 30px;
+		width: toRem(30);
+		height: toRem(30);
 		display: flex;
 		flex-shrink: 0;
 		justify-content: center;
@@ -1272,17 +1253,16 @@ body {
 
 	&__title-h3 {
 		font-weight: 600;
-		font-size: 16px;
 		text-transform: capitalize;
 		color: #000;
 		@media (max-width: toEm(450)) {
 			text-align: center;
-			font-size: 22px;
+			font-size: toRem(22);
 		}
 	}
 
 	&__title-h3--margin {
-		margin-bottom: 22px;
+		margin-bottom: toRem(22);
 	} 
 
 	&__list {
@@ -1297,12 +1277,12 @@ body {
 
 	&__item {
 		font-weight: 400;
-		font-size: 14px;
+		font-size: toRem(14);
 		line-height: 1.71;
 		text-transform: capitalize;
 		color: #1e2832;
 		@media (max-width: toEm(450)) {
-			font-size: 18px;
+			font-size: toRem(18);
 		}
 		@media (any-hover: hover) {
 			&:hover {
@@ -1317,11 +1297,10 @@ body {
 }
 .bottom-footer {
 	background: #1e2832;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: toRem(10);
+	padding-bottom: toRem(10);
 	&__container {
 		font-weight: 400;
-		font-size: 16px;
 		text-transform: capitalize;
 		color: #fff;
 		display: flex;
@@ -1352,8 +1331,8 @@ body {
 			&::after {
 				content: "";
 				background: url("../img/footer/arroy.svg") bottom / 16px 14px no-repeat;
-				width: 20px;
-				height: 20px;
+				width: toRem(20);
+				height: toRem(20);
 			}
 			transition: all 0.3s;
 			@media (any-hover: hover) {
@@ -1363,8 +1342,8 @@ body {
 				&:hover::after  {
 					content: "";
 					background: url("../img/footer/arrow-red.svg") bottom / 16px 14px no-repeat;
-					width: 20px;
-					height: 20px;
+					width: toRem(20);
+					height: toRem(20);
 				}
 			}
 		}	
