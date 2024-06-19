@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- Ukraine - uk -->
+<!-- Мова не визначена - zxx -->
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="uk">
+	<head>
+		<!-- Кодування тексту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Заголовок сторінки в браузері -->
+		<title>Lesson 21</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<h1 class="header__main-title">
+						Урок №21 (Основи JavaScript. Частина №1)
+					</h1>
+				</div>
+			</header>
+			<main class="page">
+				<div class="page__container">
+					<section class="page__tasks tasks-js">
+						<div class="tasks-js__task">
+							<h2 class="tasks-js__title">
+								Задача №1
+							</h2>
+							<div class="tasks-js__question">
+								Яка назва змінної вірна?
+							</div>
+							<ol class="tasks-js__list ">
+								<li class="tasks-js__item">
+									<span class="tasks-js__span tasks-js__span--violet">let</span> <span class="tasks-js__span tasks-js__span--red">user-name</span>
+								</li>
+								<li class="tasks-js__item">
+									<span class="tasks-js__span tasks-js__span--violet">let</span> <span class="tasks-js__span tasks-js__span--red">UserName</span>
+								</li>
+								<li class="tasks-js__item">
+									<span class="tasks-js__span tasks-js__span--violet">let</span> <span class="tasks-js__span tasks-js__span--red">userName</span>
+								</li>
+							</ol>
+							<div class="tasks-js__answer">
+								Правильна відповідь буде варіант №3 let userName, тому що у JavaScript при назві змінних використовуеться lowerCamelCase.
+							</div>
+						</div>
+						<div class="tasks-js__task">
+							<h2 class="tasks-js__title">
+								Задача №2
+							</h2>
+							<div class="tasks-js__question">
+								Чи буде помилка при виконанні наступної програми?
+							</div>
+							<div class="tasks-js__code">
+								<p>
+									<span class="tasks-js__span tasks-js__span--violet">const</span> <span class="tasks-js__span tasks-js__span--orange">userName</span> = <span class="tasks-js__span tasks-js__span--orange">20</span>
+								</p>
+								<p>
+									<span class="tasks-js__span tasks-js__span--red">userName</span> = <span class="tasks-js__span tasks-js__span--green">"Іштван"</span>
+								</p>
+							</div>
+							<div class="tasks-js__answer">
+								Так, буде помилка. Константи в JS не можна переназначати 
+							</div>
+						</div>
+						<div class="tasks-js__task">
+							<h2 class="tasks-js__title">
+								Задача №3
+							</h2>
+							<div class="tasks-js__question">
+								Що потрапить в консоль?
+							</div>
+							<div class="tasks-js__code">
+								<p>
+									<span class="tasks-js__span tasks-js__span--violet">let</span> <span class="tasks-js__span tasks-js__span--red">numOne</span> = <span class="tasks-js__span tasks-js__span--orange">20</span>
+								</p>
+								<p>
+									<span class="tasks-js__span tasks-js__span--violet">let</span> <span class="tasks-js__span tasks-js__span--red">numTwo</span> = <span class="tasks-js__span tasks-js__span--green">"20"</span>
+								</p>
+								<p>
+									<span class="tasks-js__span tasks-js__span--violet">let</span> <span class="tasks-js__span tasks-js__span--red">numSumm</span> = <span class="tasks-js__span tasks-js__span--red">numOne</span> + <span class="tasks-js__span tasks-js__span--red">numTwo</span>
+								</p>
+								<p>
+									<span class="tasks-js__span tasks-js__span--red">console</span>.<span class="span tasks-js__span tasks-js__span--mint">log</span>(<span class="tasks-js__span tasks-js__span--red">numSumm</span>)
+								</p>
+							</div>
+							<div class="tasks-js__answer">
+								Відповідь: строка "2020"
+							</div>
+						</div>
+					</section>
+				</div>
+			</main>
+			<footer class="footer">
+				<div class="footer__container">
+					<h2 class="footer__title">
+						Footer
+					</h2>
+				</div>
+			</footer>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>

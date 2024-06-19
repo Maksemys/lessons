@@ -1,0 +1,154 @@
+@use "sass:math";
+
+/* Локальне підключення шрифтів */
+@import "_fonts.scss";
+
+/* Підключення шрифтів */
+@import url("https://fonts.googleapis.com/css?family=Exo+2:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron:500&display=swap");
+
+/* Скидання стилів */
+@import "_reset.scss";
+
+// Міксіни
+@import "_mixins.scss";
+
+body {
+	font-family: "Exo", sans-serif;
+	// background-color: #000001;
+	// color: #ffffff;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: toRem(1300);
+	padding-left: toRem(15);
+	padding-right: toRem(15);
+	margin: 0 auto;
+}
+
+[class*="__title"] {
+	font-size: toRem(30);
+	line-height: 1.4;
+}
+
+.header {
+	background-color: rgb(193, 193, 193);
+		&__container {
+			text-align: center;
+			padding-top: toRem(30);
+			padding-bottom: toRem(30);
+		}
+
+		&__main-title {
+			font-size: toRem(50);
+			line-height: 1.4;
+		}
+}
+.page {
+	padding-top: toRem(30);
+	padding-bottom: toRem(30);
+	&__container {
+	}
+
+	&__tasks {
+	}
+}
+.tasks-js {
+	display: flex;
+	flex-direction: column;
+	row-gap: toRem(30);
+	column-gap: toRem(20);
+	&__task {}
+
+	&__task *:not(:last-child) {
+		margin-bottom: toRem(15);
+	}
+
+	&__title {
+	}
+
+	&__question {
+		font-size: toRem(18);
+		line-height: 1.4;
+		color: maroon;
+	}
+
+	&__list {
+		max-width: toRem(350);
+		background-color: rgb(54, 51, 51);
+		color: white;
+		padding: toRem(15);
+		padding-left: toRem(30);
+	}
+
+	&__item {
+		list-style-type: decimal;
+	}
+
+	&__item:not(:last-child) {
+		margin-bottom: toRem(10);
+	}
+
+	&__span {}
+
+	&__span--violet {
+		color: violet;
+	}
+
+	&__span--red {
+		color: rgb(224, 104, 35);
+	}
+
+	&__answer {
+		font-size: toRem(18);
+		line-height: 1.4;
+		color: blue;
+	}
+
+	&__code {
+		max-width: toRem(350);
+		background-color: rgb(54, 51, 51);
+		color: white;
+		padding: toRem(15);
+	}
+
+	&__code p:not(:last-child) {
+		margin-bottom: toRem(10);
+	}
+
+	&__span--orange {
+		color: orange;
+	}
+
+	&__span--green {
+		color: greenyellow;
+	}
+
+	&__span--mint {
+		color: rgb(180, 216, 198);
+	}
+
+}
+.footer {
+	background-color: rgb(193, 193, 193);
+		&__container {
+			text-align: center;
+			padding-top: toRem(30);
+			padding-bottom: toRem(30);
+		}
+
+		&__title {
+		}
+}
