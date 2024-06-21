@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- Ukraine - uk -->
+<!-- Мова не визначена - zxx -->
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="uk">
+	<head>
+		<!-- Кодування тексту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Заголовок сторінки в браузері -->
+		<title>Lesson 22</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<h1 class="header__main-title">
+						Урок №22 (Основи JavaScript. Частина №2)
+					</h1>
+				</div>
+			</header>
+			<main class="page">
+				<div class="page__container">
+					<section class="page__tasks tasks-js">
+						<div class="tasks-js__task">
+							<h2 class="tasks-js__title">
+								Задача №1
+							</h2>
+							<div class="tasks-js__question">
+								Що потрапить в консоль?
+							</div>
+							<div class="tasks-js__code">
+								<pre style="color: aquamarine; font-size: 1.125rem;">
+let someVar = 0;
+someVar++;
+
+if (someVar) {
+	console.log(someVar);
+}
+								</pre>
+							</div>
+							<div class="tasks-js__answer">
+								Відповідь: в консоль потрапить число 1
+							</div>
+						</div>
+						<div class="tasks-js__task">
+							<h2 class="tasks-js__title">
+								Задача №2
+							</h2>
+							<div class="tasks-js__question">
+								<p>
+									За допомогою циклу FOR виведіть в консоль 10 рядків:
+								</p>
+								<ul>
+									<li>
+										Пункт №1
+									</li>
+									<li>
+										Пункт №2
+									</li>
+									<li>
+										і т.д.
+									</li>
+								</ul>
+							</div>
+							<div class="tasks-js__code">
+								<pre>
+let someString = "Пункт №"
+
+for (let num = 0; num < 11; ++num) {
+	console.log(`${someString}${num}`)
+}
+								</pre>
+							</div>
+							<div class="tasks-js__answer">
+								Відповідь в консолі
+							</div>
+						</div>
+						<div class="tasks-js__task">
+							<h2 class="tasks-js__title">
+								Задача №3
+							</h2>
+							<div class="tasks-js__question">
+								Що потрапить в консоль?
+							</div>
+							<div class="tasks-js__code">
+								<pre>
+if (2 * 20 <= 10 || 30 / 2 < 5 && 10 <= "10" || 20 === "20") {
+	console.log('000');
+}
+								</pre>
+							</div>
+							<div class="tasks-js__answer">
+								Відповідь: (false || false && true || false), в консоль нічогоне потрапить бо не виконується жодна з умов
+							</div>
+						</div>
+						<div class="tasks-js__task">
+							<h2 class="tasks-js__title">
+								Задача №4
+							</h2>
+							<div class="tasks-js__question">
+								Створіть функцію, яка повертає результат ділення числа a на число b з додаванням рядка "Результат ділення: ".
+								Викличте функцію передаючі різні значення, у тому числі не передаючи зовсім.
+								Функція не має повертати NaN, Infinite або помилку.
+							</div>
+							<div class="tasks-js__answer">
+								Відповідь: в консолі
+							</div>
+						</div>
+						<div class="tasks-js__task">
+							<h2 class="tasks-js__title">
+								Задача №5
+							</h2>
+							<div class="tasks-js__question">
+								Створіть масив даних - 5 елементів, один з яких число 10.
+								Обробіть масив за допомогою методу перебору.
+								Перевіряйте елемент на відповідність числу 10, та у разі відповідності, виводьте в консоль.
+							</div>
+							<div class="tasks-js__answer">
+								Відповідь: в консолі
+							</div>
+						</div>
+					</section>
+				</div>
+			</main>
+			<footer class="footer">
+				<div class="footer__container">
+					<h2 class="footer__title">
+						Footer
+					</h2>
+				</div>
+			</footer>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
