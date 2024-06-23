@@ -1,0 +1,109 @@
+@use "sass:math";
+
+/* Локальне підключення шрифтів */
+@import "_fonts.scss";
+
+/* Підключення шрифтів */
+@import url("https://fonts.googleapis.com/css?family=Exo+2:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron:500&display=swap");
+
+/* Скидання стилів */
+@import "_reset.scss";
+
+// Міксіни
+@import "_mixins.scss";
+
+body {
+	font-family: "Exo", sans-serif;
+	// background-color: #000001;
+	// color: #ffffff;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: toRem(1300);
+	padding-left: toRem(15);
+	padding-right: toRem(15);
+	margin: 0 auto;
+}
+
+[class*="__title"] {
+	font-size: toRem(30);
+	line-height: 1.4;
+}
+
+.header {
+	background-color: rgb(193, 193, 193);
+		&__container {
+			text-align: center;
+			padding-top: toRem(30);
+			padding-bottom: toRem(30);
+		}
+
+		&__main-title {
+			font-size: toRem(50);
+			line-height: 1.4;
+		}
+}
+
+
+.page {
+	padding: toRem(50);
+
+	&__container {
+	}
+
+	&__section {
+	}
+}
+.item {
+}
+.link {
+	@media (any-hover: hover) {
+		&:hover {
+			text-decoration: underline;
+		}
+		
+	}
+}
+.section {
+
+	&__wrap {
+	}
+
+	&__paragraf {
+	}
+
+	&__button {
+	}
+}
+.button {
+	background-color: #d2b62c;
+	padding: toRem(10);
+	border-radius: toRem(8);
+}
+
+
+
+.footer {
+	background-color: rgb(193, 193, 193);
+		&__container {
+			text-align: center;
+			padding-top: toRem(30);
+			padding-bottom: toRem(30);
+		}
+
+		&__title {
+		}
+}
