@@ -1,0 +1,137 @@
+@use "sass:math";
+
+/* Локальне підключення шрифтів */
+@import "_fonts.scss";
+
+/* Підключення шрифтів */
+@import url("https://fonts.googleapis.com/css?family=Exo&display=swap");
+
+/* Скидання стилів */
+@import "_reset.scss";
+
+// Міксіни
+@import "_mixins.scss";
+
+body {
+	font-family: "Exo", sans-serif;
+	opacity: 0;
+	transition: opacity 5s;
+	&.loaded {
+		opacity: 1;
+	}
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: toRem(1300);
+	padding-left: toRem(15);
+	padding-right: toRem(15);
+	margin: 0 auto;
+}
+
+[class*="__title"] {
+	font-size: toRem(30);
+	line-height: 1.4;
+}
+
+.header {
+	background-color: rgb(193, 193, 193);
+		&__container {
+			text-align: center;
+			padding-top: toRem(30);
+			padding-bottom: toRem(30);
+		}
+
+		&__main-title {
+			font-size: toRem(40);
+			line-height: 1.4;
+		}
+}
+
+
+
+.page {
+	padding: toRem(50);
+	&__container {
+	}
+
+	&__items {
+		margin-bottom: toRem(50);
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(10);
+	}
+
+	&__item {
+		cursor: pointer;
+		&.active {
+			color: goldenrod;
+		}
+	}
+}
+
+
+.section {
+	&__wrap {
+		& > *:not(:last-child) {
+			margin-bottom: toRem(20);
+		}
+	}
+	&__count {
+		height: toRem(300);
+		width: toRem(300);
+	}
+}
+
+.count {
+	&__item {
+		height: toRem(300);
+		width: toRem(300);
+		background-color: blue;
+		color: #e5e50c;
+		font-size: 50px;
+		font-weight: 600;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 0;
+		transform: translate(-100%, 0px);
+		transition: all 0.3s;
+		&.animate {
+			transform: translate(0px, 0px);
+			opacity: 1;
+		}
+	}
+}
+
+
+
+
+
+.footer {
+		background-color: rgb(193, 193, 193);
+		&.color {
+		background-color: #d2b62c;
+		}
+		&__container {
+			text-align: center;
+			padding-top: toRem(30);
+			padding-bottom: toRem(30);
+		}
+
+		&__title {
+		}
+}
