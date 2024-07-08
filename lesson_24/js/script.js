@@ -72,19 +72,16 @@ const elementCountItem = document.querySelector(".count__item")
 const dataCountElementCountItem = elementCountItem.dataset.count
 const dataSpeedElementCountItem = elementCountItem.dataset.speed
 
-// observer параметри
 const options = {
 	root: null,
 	rootMargin: "0px 0px 0px 0px",
 	threshold: 0.8,
 }
 
-// коли об'єкт з'явиться
 const callback = (entries, observer) => {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
 			elementCountItem.classList.add('animate')
-			//запускаємо інтервал який починає рахувати як з'явиться
 			let i = 0
 			let count = setInterval(() => {
 			i === +dataCountElementCountItem ? clearInterval(count) : ++i
@@ -93,7 +90,6 @@ const callback = (entries, observer) => {
 		}
 	})
 }
-// observer створення
+
 const observer = new IntersectionObserver(callback, options)
-// observer відслідковування елементу
 observer.observe(elementCount)
